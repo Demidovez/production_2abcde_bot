@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  production_2abcde_bot:
+    build: .
+    restart: unless-stopped
+    image: production_2abcde_bot
+    container_name: production_2abcde_bot_co
