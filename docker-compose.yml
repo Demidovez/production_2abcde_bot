@@ -5,3 +5,6 @@ services:
     restart: unless-stopped
     image: production_2abcde_bot
     container_name: production_2abcde_bot_co
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"

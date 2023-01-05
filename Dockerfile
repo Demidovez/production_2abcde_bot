@@ -27,5 +27,6 @@ RUN addgroup -S pptruser && adduser -S -g pptruser pptruser \
     && chown -R pptruser:pptruser /app
 
 RUN npm install
+ENV TZ Europe/Minsk
 COPY . .
 ENTRYPOINT [ "npm", "start" ]

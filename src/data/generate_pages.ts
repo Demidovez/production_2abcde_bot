@@ -16,8 +16,8 @@ export const generatePages = async (): Promise<IPages> => {
         const page = await browser.newPage();
 
         await page.authenticate({
-          username: "operuser",
-          password: "Qwerty12",
+          username: process.env.USERNAME!,
+          password: process.env.PASSWORD!,
         });
 
         await page.goto(
